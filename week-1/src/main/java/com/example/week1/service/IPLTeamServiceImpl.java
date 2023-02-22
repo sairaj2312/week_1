@@ -34,4 +34,8 @@ public class IPLTeamServiceImpl implements IPLTeamService{
     public void deleteTeam(long id) {
         teamRepository.deleteById(id);
     }
+
+    public IPLTeamServiceImpl(IPLTeamRepository teamRepository){
+        this.teamRepository = teamRepository;
+    }
 }
